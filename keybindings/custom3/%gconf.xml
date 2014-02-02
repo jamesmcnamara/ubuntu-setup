@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="action" mtime="1391299378" type="string">
+		<stringvalue>google-chrome http://hulu.com</stringvalue>
+	</entry>
+	<entry name="name" mtime="1391299378" type="string">
+		<stringvalue>Hulu</stringvalue>
+	</entry>
+	<entry name="binding" mtime="1391299389" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Shift&gt;h</stringvalue>
+	</entry>
+</gconf>

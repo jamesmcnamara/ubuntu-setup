@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="action" mtime="1391299268" type="string">
+		<stringvalue>netflix-desktop</stringvalue>
+	</entry>
+	<entry name="name" mtime="1391299268" type="string">
+		<stringvalue>Netflix</stringvalue>
+	</entry>
+	<entry name="binding" mtime="1391299382" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Shift&gt;n</stringvalue>
+	</entry>
+</gconf>

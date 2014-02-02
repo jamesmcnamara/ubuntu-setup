@@ -1,6 +1,14 @@
 #!/usr/bin/bash
 
-COUNT = $(ls ~/.gconf/desktop/gnome/keybindings/ | grep "count*" | wc -l)
+KEYPATH=~/.gconf/desktop/gnome/keybindings/
+COUNT=$(ls ./keybindings/ | wc -l)
+EXISTING=$(ls ~/.gconf/desktop/gnome/keybindings/ | grep "count*" | wc -l)
 
-for file in *;
-do mkdir ~/
+for file in *; do
+	EXISTING=$(($EXISTING+1))
+	TMP_PATH=$($KEYPATH/custom$EXISTING)
+	mkdir $TMP_PATH 
+	cp $file $TMP_PATH/%gconf.xml
+	COUNT=$(($COUNT+1))
+done;
+

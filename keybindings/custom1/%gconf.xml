@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="action" mtime="1391298130" type="string">
+		<stringvalue>google-chrome</stringvalue>
+	</entry>
+	<entry name="name" mtime="1391298130" type="string">
+		<stringvalue>Chrome</stringvalue>
+	</entry>
+	<entry name="binding" mtime="1391298133" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Shift&gt;a</stringvalue>
+	</entry>
+</gconf>
