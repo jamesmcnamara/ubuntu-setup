@@ -28,11 +28,11 @@ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 sudo apt-get install  samba samba-common python-glade2 system-config-samba -y
 #TODO: Samba still requires configuring
 
-# Some nonsense
-for i in {1..50}; do echo "boobs"; done;
+#Move keybinds
+./moveKeyBinds
 
-# 
-
+#Update terminator config file
+./termConfigMvr
 
 # reboot
 sudo reboot

@@ -1,0 +1,8 @@
+#!/bin/bash
+CONFIG=config
+CONF_PATH=~/.config/terminator/
+FILE_COUNT=$(ls $CONF_PATH|wc -l)
+if [ $FILE_COUNT -gt 0 ]; then
+    rm $CONF_PATH$CONFIG;
+fi
+cp termConfig $CONF_PATH$CONFIG
