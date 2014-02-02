@@ -1,0 +1,38 @@
+#! /bin/bash
+
+# Installation script for automatically configuring a computer following fresh installation of Ubuntu
+# Sam Rendall
+# James McNamara
+
+# Repos ect
+sudo apt-get update -y && apt-get upgrade -y
+
+# Install some useful programs
+sudo apt-get install terminator openssh-server nmap vim -y
+
+# Install Spotify
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E && sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list' && sudo apt-get update && sudo apt-get install spotify-client -y
+
+#Google Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome*; sudo apt-get -f install
+
+#Netflix
+sudo apt-add-repository ppa:ehoover/compholio -y &&
+sudo apt-get update -y &&
+sudo apt-get install netflix-desktop -y
+
+#Dropbox
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - && ~/.dropbox-dist/dropboxd
+
+#Samba (for File Sharing)
+sudo apt-get install  samba samba-common python-glade2 system-config-samba -y
+#TODO: Samba still requires configuring
+
+# Some nonsense
+for i in {1..50}; do echo "boobs"; done;
+
+# 
+
+
+# reboot
+sudo reboot
