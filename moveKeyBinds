@@ -1,0 +1,13 @@
+#!/bin/bash
+
+CUSTOM=custom
+KEYPATH=~/.gconf/desktop/gnome/keybindings/
+EXISTING=$(ls ~/.gconf/desktop/gnome/keybindings/ | grep "custom*" | wc -l)
+
+for DIR in keybindings/*; do
+    TMP_PATH=$KEYPATH$CUSTOM$EXISTING
+    mkdir $TMP_PATH 
+    sudo cp $DIR/* $TMP_PATH/%gconf.xml
+    EXISTING=$(($EXISTING+1))
+done;
+
