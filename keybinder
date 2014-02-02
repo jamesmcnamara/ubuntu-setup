@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+COUNT = $(ls ~/.gconf/desktop/gnome/keybindings/ | grep "count*" | wc -l)
+
+for file in *;
+do mkdir ~/
