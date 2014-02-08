@@ -14,7 +14,7 @@ sudo apt-get install terminator openssh-server nmap vim -y
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E && sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list' && sudo apt-get update && sudo apt-get install spotify-client -y
 
 #Google Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome*; sudo apt-get -f install
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome*; sudo apt-get -f install -y
 
 #Netflix
 sudo apt-add-repository ppa:ehoover/compholio -y &&
