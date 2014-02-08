@@ -1,8 +1,12 @@
 #!/bin/bash
 CONFIG=config
+CONF_DIR_EXISTS=$(ls ~/.config/ | grep terminator |wc -l)i
 CONF_PATH=~/.config/terminator/
+if [ $CONF_DIR_EXISTS -eq 0 ];
+    mkdir $CONF_PATH;
+fi
 FILE_COUNT=$(ls $CONF_PATH|wc -l)
 if [ $FILE_COUNT -gt 0 ]; then
     rm $CONF_PATH$CONFIG;
 fi
-cp termConfig $CONF_PATH$CONFIG
+mv termConfig $CONF_PATH$CONFIG
