@@ -11,7 +11,7 @@ sudo apt-get update -y && apt-get upgrade -y
 sudo apt-get install terminator openssh-server nmap vim -y
 
 # Install Spotify
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E && sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list' && sudo apt-get update && sudo apt-get install spotify-client -y
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59 && sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list' && sudo apt-get update && sudo apt-get install spotify-client -y
 
 #Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome*; sudo apt-get -f install -y
