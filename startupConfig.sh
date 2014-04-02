@@ -11,9 +11,6 @@ sudo apt-add-repository ppa:ehoover/compholio -y # netflix
 sudo apt-get update -y && apt-get upgrade -y
 
 # Install some useful programs
-sudo apt-get update -y && apt-get upgrade -y
-
-# Install some useful programs
 sudo apt-get install terminator openssh-server nmap vim git nautilus-open-terminal -y
 
 # Install Spotify
@@ -21,9 +18,6 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4E9CFF4E && sudo s
 
 #Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome*; sudo apt-get -f install --force-yes -y
-
-#Google Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i google-chrome*; sudo apt-get -f install -y
 
 #Netflix
 sudo apt-get install netflix-desktop -y
